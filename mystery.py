@@ -1,7 +1,7 @@
 import pyglet
 import time
 import sys
-import test106 as test
+
 
 
 #######Class#######
@@ -248,19 +248,5 @@ print "----------------------------End of the Game------------------------------
 print "\n"
 print "\n"
 time.sleep(2)
-
-print "Now to the Test Cases:"
-print "------------------Start of Test Cases(it is going to take some time)------------------"
-#Testing for first_room function:
-test.testEqual(type(first_room(1)), type(""))    
-#Testing for second_room function:    
-test.testEqual(second_room(5), "Since you couldn't decide, you played against the rule of the game.\nThe creator of this game decides to punish you for this. So you die.\nGame Over.\n")        
-#Testing for steady_print function:
-lovelz = "Fischer Fritz fischt frische Fische."
-test.testEqual(steady_print(lovelz), "")
-test.testEqual(type(steady_print(lovelz)), type("")) 
-#Testing for second_choice function: 
-test.testEqual(second_choice(1), "")
-print "------------------End of Test Cases------------------" 
 
 print quick_print("Hope you enjoyed the game :)")
